@@ -3,8 +3,9 @@
 
 ```bash
 julia --project=. sysimages/precompile.jl # precompile sysimage: only first start
+# optional activate julia sysimage in vscode: https://www.julia-vscode.org/docs/dev/userguide/compilesysimage/
 
-julia --project=. --sysimage=sysimages/sys_precompiled.so src/samples/pendulum.jl
+./run.sh src/samples/pendulum.jl
 ```
 
 
@@ -14,11 +15,11 @@ julia --project=. --sysimage=sysimages/sys_precompiled.so src/samples/pendulum.j
 julia --project=. sysimages/precompile.jl
 ```
 
-
 # Tutorials
 
 - https://pkgdocs.julialang.org/v1/environments/
 - https://julialang.github.io/PackageCompiler.jl/dev/examples/plots.html
+- https://www.julia-vscode.org/docs/dev/userguide/compilesysimage/
 
 # Also
 

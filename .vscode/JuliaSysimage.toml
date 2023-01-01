@@ -1,0 +1,3 @@
+[sysimage]
+# exclude=["Pkg1", "Pkg2"]   # Additional packages to be excluded in the system image
+execution_files=["sysimages/statements_to_precompile.jl", ]
