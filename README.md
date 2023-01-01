@@ -15,6 +15,20 @@ julia --project=. sysimages/precompile.jl # precompile sysimage: only first star
 julia --project=. sysimages/precompile.jl
 ```
 
+
+# IJulia kernel for notebooks Quickstart
+
+```bash
+cp ijulia_kernel/statements_to_precompile.jl.sample ijulia_kernel/statements_to_precompile.jl
+julia --project=. ijulia_kernel/rebuild_ijulia_kernel_sysimage.jl
+julia --project=. ijulia_kernel/create_ijulia_kernel.jl # * only first time
+```
+
+- https://julialang.github.io/IJulia.jl/stable/manual/installation/#Installing-additional-Julia-kernels
+  + https://stackoverflow.com/questions/64054521/add-julia-kernel-with-flag-to-jupyterlab
+  + https://discourse.julialang.org/t/tool-sysimage-creator-for-ijulia-users/61229
+  + https://stackoverflow.com/questions/42635310/remove-kernel-on-jupyter-notebook
+
 # Tutorials
 
 - https://pkgdocs.julialang.org/v1/environments/
