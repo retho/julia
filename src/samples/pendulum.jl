@@ -26,4 +26,5 @@ end
 
 p = Plots.plot(t, θ)
 display(p)
+show(p)
 readline()
