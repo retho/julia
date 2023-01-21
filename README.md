@@ -4,7 +4,7 @@
 ```bash
 cp precompile_this.jl.sample precompile_this.jl
 ./rebuid_sysimage.sh # only first start: precompile sysimage
-julia --project=. ijulia_kernel/create_ijulia_kernel.jl # only first time: register ijulia kernel (with sysimage)
+julia --project=. ijulia_kernel/register_ijulia_kernel.jl # only first time: register ijulia kernel (with sysimage and threads)
 # optional activate julia sysimage in vscode: https://www.julia-vscode.org/docs/dev/userguide/compilesysimage/
 
 ./run.sh src/samples/pendulum.jl
@@ -23,7 +23,7 @@ julia --project=. sysimages/precompile.jl
 ```bash
 cp precompile_this.jl.sample precompile_this.jl
 ./rebuid_sysimage.sh
-julia --project=. ijulia_kernel/create_ijulia_kernel.jl # only once
+julia --project=. ijulia_kernel/register_ijulia_kernel.jl # only once
 ```
 
 - https://julialang.github.io/IJulia.jl/stable/manual/installation/#Installing-additional-Julia-kernels
