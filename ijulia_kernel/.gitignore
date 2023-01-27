@@ -1,1 +1,3 @@
-*.so
+config.toml
+kernel.tmp.so
+kernel.so

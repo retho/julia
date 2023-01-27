@@ -1,6 +1,0 @@
-import Plots
-
-p1 = Plots.plot(rand(5), rand(5))
-display(p1)
-
-p2 = Plots.surface(rand(5), rand(5), rand(5,5))

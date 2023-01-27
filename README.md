@@ -2,28 +2,19 @@
 # Quickstart
 
 ```bash
-cp precompile_this.jl.sample precompile_this.jl
-./rebuid_sysimage.sh # only first start: precompile sysimage
-julia --project=. ijulia_kernel/register_ijulia_kernel.jl # only first time: register ijulia kernel (with sysimage and threads)
+cp ijulia_kernel/config.toml.example ijulia_kernel/config.toml
+./rebuid_kernel.sh # precompile sysimage and register ijulia kernel
 # optional activate julia sysimage in vscode: https://www.julia-vscode.org/docs/dev/userguide/compilesysimage/
 
 ./run.sh src/samples/pendulum.jl
 ```
 
 
-# How to precompile
-
-```bash
-julia --project=. sysimages/precompile.jl
-```
-
-
 # IJulia kernel for notebooks with precompiled sysimage. Quickstart
 
 ```bash
-cp precompile_this.jl.sample precompile_this.jl
-./rebuid_sysimage.sh
-julia --project=. ijulia_kernel/register_ijulia_kernel.jl # only once
+cp ijulia_kernel/config.toml.example ijulia_kernel/config.toml
+./rebuid_kernel.sh
 ```
 
 - https://julialang.github.io/IJulia.jl/stable/manual/installation/#Installing-additional-Julia-kernels

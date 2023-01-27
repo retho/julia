@@ -1,0 +1,2 @@
+[sysimage]
+packages = ["Plots", "IJulia"]
