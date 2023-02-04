@@ -7,6 +7,7 @@ cp ijulia_kernel/config.toml.example ijulia_kernel/config.toml
 # optional activate julia sysimage in vscode: https://www.julia-vscode.org/docs/dev/userguide/compilesysimage/
 
 ./run.sh src/samples/pendulum.jl
+./run.sh -e "using IJulia; notebook(;dir=\"src\")"
 ```
 
 

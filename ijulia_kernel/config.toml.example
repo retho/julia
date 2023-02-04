@@ -1,2 +1,2 @@
 [sysimage]
-packages = ["Plots", "IJulia"]
+packages = ["Plots", "IJulia", "CUDA"]
