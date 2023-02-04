@@ -2,7 +2,7 @@
 
 julia_version = "1.8.4"
 manifest_format = "2.0"
-project_hash = "b8fe99a4e822af0c5622e3bb50d702891b5c36f2"
+project_hash = "91de2f2fb03c2462c7cc76f8cb04988d63bebb88"
 
 [[deps.AbstractFFTs]]
 deps = ["ChainRulesCore", "LinearAlgebra"]
@@ -563,6 +563,12 @@ version = "1.4.1"
 deps = ["Artifacts", "Libdl"]
 uuid = "efcefdf7-47ab-520b-bdef-62a2eaa19f15"
 version = "10.40.0+0"
+
+[[deps.PackageCompiler]]
+deps = ["Artifacts", "LazyArtifacts", "Libdl", "Pkg", "Printf", "RelocatableFolders", "TOML", "UUIDs"]
+git-tree-sha1 = "233d3ab9b086e67a010d33dcacc3fc379044e203"
+uuid = "9b87118b-4619-50d2-8e1e-99f35a4d4d9d"
+version = "2.1.4"
 
 [[deps.Parsers]]
 deps = ["Dates", "SnoopPrecompile"]
