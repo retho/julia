@@ -3,7 +3,7 @@
 
 ```bash
 cp ijulia_kernel/config.toml.example ijulia_kernel/config.toml
-./rinstall.sh
+./rinstall.sh # install dependencies
 ./rebuid_kernel.sh # precompile sysimage and register ijulia kernel
 # optional activate julia sysimage in vscode: https://www.julia-vscode.org/docs/dev/userguide/compilesysimage/
 
